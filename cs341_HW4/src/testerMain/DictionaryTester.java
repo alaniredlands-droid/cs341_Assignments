@@ -3,6 +3,10 @@ package testerMain;
 import cs341_HW4.Dictionary;
 import cs341_HW4.Node;
 
+/**
+ * DictionaryTester - Tester class for dictionary implementation.
+ */
+
 public class DictionaryTester {
 
 	public static void main(String[] args) {
@@ -60,11 +64,23 @@ public class DictionaryTester {
 		System.out.println("Tests completed successfully.");
 	}
 
-	// VALIDATE BST STRUCTURE
+	/**
+	 * VALIDATE BST STRUCTURE
+	 * 
+	 * @param dict
+	 */
 	public static void validateBST(Dictionary dict) {
+		// START FROM ROOT NODE
 		validateNode(dict.getRoot(), null, null);
 	}
 
+	/**
+	 * Validate each node.
+	 * 
+	 * @param node
+	 * @param min
+	 * @param max
+	 */
 	private static void validateNode(Node node, String min, String max) {
 		if (node == null) {
 			return;

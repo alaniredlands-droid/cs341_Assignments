@@ -2,6 +2,9 @@ package cs341_HW4;
 
 /**
  * Dictionary class that implements a binary search tree to store words.
+ * 
+ * @author Alani Dao
+ * @version 1.0
  */
 public class Dictionary {
 
